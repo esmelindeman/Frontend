@@ -1,0 +1,302 @@
+/******************
+VARIABELEN
+******************/
+
+:root {
+    --primarycolor: #FE0100;
+    --secondarycolor: #06c;
+    --thirdcolor: #f1f1ec;
+    --fourthcolor: white;
+    --fifthcolor: black;
+    --font-family: 'AmericanTypewriter';
+    --font-size: 12px;
+    --center-align: center;
+    --justify-align: justify;
+    --clip-path-button-shape: polygon(0.15em 0.15em, calc(100% - 0.1em) 0.15em, calc(100% - 0.2em) calc(100% - 0.15em), 0.25em calc(100% - 0.15em));
+    --lineheight: 1.39;
+    --click: pointer;
+    --display-flex: flex;
+    --display-grid: grid;
+    --weight: 600;
+}
+
+/******************
+BASIS
+******************/
+body {
+    background-color: var(--primarycolor);
+    font-family: var(--font-family);
+    color: var(--fourthcolor);
+}
+
+main {
+    display: var(--display-flex);
+    justify-content: var(--center-align);
+    align-items: var(--center-align);
+    flex-direction: column;
+}
+
+h1,
+h3 {
+    text-align: var(--center-align);
+}
+
+p {
+    text-align: var(--justify-align);
+    font-size: var(--font-size);
+    max-width: 450px;
+}
+
+/******************
+SECTIONS
+******************/
+
+section {
+    display: var(--display-flex);
+    justify-content: var(--center-align);
+    align-items: var(--center-align);
+}
+
+section:first-of-type {
+    justify-content: space-around;
+}
+
+article:nth-of-type(1) section:first-of-type img {
+    width: 20vh;
+}
+
+section:nth-of-type(2) {
+    flex-direction: column;
+}
+
+section:nth-of-type(3) {
+    flex-direction: column;
+}
+
+section:nth-of-type(3) img {
+    background-color: var(--primarycolor);
+}
+
+section:first-of-type a button {
+    background-color: var(--primarycolor);
+    cursor: var(--click);
+}
+
+/******************
+CARROUSEL
+******************/
+
+.wikkel span {
+    display: none;
+}
+
+.loading span {
+    display: inherit !important
+}
+
+.wikkel img {
+    display: none;
+    width: 100%;
+}
+
+.wikkel img.current {
+    display: block;
+}
+
+.wikkel {
+    width: 480px;
+    text-align: var(--center-align);
+    margin-top: 5em;
+}
+
+section:nth-of-type(3) img {
+    margin-top: 2em;
+    width: 60vh;
+}
+
+
+/******************
+TITEL EN PIJL OMLAAG
+******************/
+
+article:nth-of-type(1) section:nth-of-type(2) h1 {
+    width: 30%;
+}
+
+article:nth-of-type(1) section:nth-of-type(2) img {
+    width: 10%;
+}
+
+/******************
+BUTTONS
+******************/
+
+button {
+    background-color: var(--primarycolor);
+    font-family: var(--font-family);
+    clip-path: var(--clip-path-button-shape);
+    cursor: var(--click);
+    font-weight: 700;
+    border: none;
+    font-size: 1.2em;
+    padding: 0.6em 0.9em 0.5em;
+}
+
+.verborgen {
+    display: none !important
+}
+/******************
+important gebruikt omdat display flex 
+ook nodig is bij het article om de sluit 
+button aan de rechterkant te plaatsen
+******************/
+
+/******************
+VERTEL ME MEER UITKLAP
+******************/
+
+.meer {
+    background-color: var(--fourthcolor);
+}
+
+article:nth-of-type(2),
+article:nth-of-type(3) {
+    display: var(--display-flex);
+    justify-content: var(--center-align);
+    flex-direction: column;
+    background-color: var(--fourthcolor);
+    width: 80%;
+    margin-top: 2em;
+    padding: 10px;
+}
+
+article:nth-of-type(2) h3 {
+    color: var(--fifthcolor);
+}
+
+article:nth-of-type(2) p,
+p span {
+    color: var(--fifthcolor);
+    line-height: var(--lineheight);
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 12px;
+    width: 100%;
+    display: inline;
+}
+
+p span span {
+    cursor: var(--click);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+article:nth-of-type(2) img {
+    max-width: 100%;
+}
+
+/*sluit knop uitklap article*/
+article:nth-of-type(2) button {
+    background-color: var(--secondarycolor);
+    color: var(--thirdcolor);
+    cursor: var(--click);
+    width: 20%;
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 18px;
+    align-self: flex-end;
+}
+
+
+/******************
+COUNTER
+******************/
+.counter {
+    font-size: 9em;
+    align-self: center;
+    color: var(--secondarycolor);
+    font-family: var(--font-family);
+}
+
+/******************
+FOOTER
+******************/
+footer {
+    display: var(--display-flex);
+    justify-content: var(--center-align);
+    align-items: var(--center-align);
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.dottedline {
+    border: none;
+    border-top: 1px dotted var(--primarycolor);
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+    margin-top: 4em;
+    margin-bottom: 3em;
+}
+
+footer  button img {
+    align-items: var(--center-align);
+    width: 80%;
+}
+
+footer img:nth-of-type(2) {
+    width: 10%;
+}
+
+footer button {
+    background-color: var(--primarycolor);
+    cursor: var(--click);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/******************
+HAMBURGER
+******************/
+nav > button {
+    position: fixed;
+    background-color: var(--primarycolor);
+    top: 32px;
+    left: 48px;
+    width: 4em;
+    height: 4em;
+    cursor: pointer;
+    z-index: 100;
+    border: none;
+}
+
+svg {
+    fill: var(--fourthcolor);
+    width: 100%;
+}
+
+/******************
+OVERZICHTELIJKER
+******************/
+
+@media (prefers-color-scheme:dark) {
+    :root {
+        --primarycolor: white;
+        --secondarycolor: #06c;
+        --fourthcolor: black;
+        --fifthcolor: black;
+    }
+
+    article:nth-of-type(2) {
+        background-color: white;
+        border: 2px solid black;
+    }
+
+    .meer {
+        background-color: #FE0100;
+        color: white;
+    }
+
+}

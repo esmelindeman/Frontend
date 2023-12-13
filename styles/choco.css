@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'AmericanTypewriterITCPro-Lt';
+    src: url('AmericanTypewriterITCPro-Lt.woff2') format('woff2'),
+        url('AmericanTypewriterITCPro-Lt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chocoladeletter';
+    src: url('fonts/Chocoladeletter.woff2') format('woff2'),
+        url('fonts/Chocoladeletter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AmericanTypewriterITCPro';
+    src: url('AmericanTypewriterITCPro-Bold.woff2') format('woff2'),
+        url('AmericanTypewriterITCPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AmericanTypewriterITCPro-Med';
+    src: url('AmericanTypewriterITCPro-Med.woff2') format('woff2'),
+        url('AmericanTypewriterITCPro-Med.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/******************
+VARIABELEN
+******************/
+
+:root {
+    --primarycolor: #FE0100;
+    --secondarycolor: #06c;
+    --thirdcolor: #f1f1ec;
+    --fourthcolor: white;
+    --fifthcolor: black;
+    --font-family: 'AmericanTypewriter';
+    --secondary-font: 'Chocoladeletter';
+    --font-size: 12px;
+    --center-align: center;
+    --justify-align: justify;
+    --clip-path-button-shape: polygon(0.15em 0.15em, calc(100% - 0.1em) 0.15em, calc(100% - 0.2em) calc(100% - 0.15em), 0.25em calc(100% - 0.15em));
+    --lineheight: 1.39;
+    --click: pointer;
+    --display-flex: flex;
+    --display-grid: grid;
+    --weight: 600;
+}
+
+/******************
+BASIS
+******************/
+body {
+    background-color: var(--fourthcolor);
+    font-family: var(--font-family);
+    color: var(--fifthcolor);
+}
+
+h1
+{
+    text-align: var(--center-align);
+    margin-top: 2em;
+    font-size: 2.7em;
+}
+
+p {
+    text-align: var(--center-align);
+    font-size: 14px;
+}
+
+button {
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    cursor: var(--click);
+    text-decoration: none;
+}
+
+/******************
+HAMBURGER
+******************/
+nav>button {
+    position: fixed;
+    background-color: var(--fourthcolor);
+    cursor: var(--click);
+    top: 32px;
+    left: 48px;
+    width: 4em;
+    height: 4em;
+    z-index: 100;
+    border: none;
+}
+
+svg {
+    fill: var(--secondarycolor);
+    width: 100%;
+}
+
+/******************
+SHOPPINGCART
+******************/
+/* main section:first-of-type {
+    display: flex;
+}
+
+main section:first-of-type button {
+    background-color: var(--fourthcolor);
+    padding: 0;
+    margin: 0;
+    align-self: right;
+
+}
+
+main section:first-of-type button img {
+    width: 17%;
+} */
+
+
+/******************
+TWEEDE NAVIGATIE
+******************/
+
+main nav {
+    width: 96%;
+    height: 60px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+main nav ul {
+    display: var(--display-grid); /*gelijke verdeling*/
+    cursor: var(--click);
+    grid-template-columns: repeat(12,1fr);
+    gap: 5px;
+}
+
+main nav ul li {
+    background-color: var(--thirdcolor);
+    clip-path: var(--clip-path-button-shape);
+    text-align: var(--center-align);
+    white-space: nowrap;
+}
+
+main nav ul li:hover {
+    transform: rotate(2deg);
+}
+
+main nav ul li a {
+    color: var(--fifthcolor);
+    font-weight: var(--weight);
+    display: inline-block;
+    font-size: 1em;
+    padding: .5em;
+}
+
+
+
+/******************
+SECTION 2 - OPMAAK TITEL EN LINK CHOCOKADO'S
+******************/
+section {
+    display: var(--display-flex);
+    justify-content: var(--center-align);
+    text-align: var(--center-align);
+    margin-left: 2.8em;
+}
+
+section:nth-of-type(2) {
+    align-items: var(--center-align);
+    justify-content: space-between;
+}
+
+section:nth-of-type(2) a {
+    color: var(--secondarycolor);
+    font-weight: var(--weight);
+    margin-right: 2em;
+}
+
+/******************
+PRODUCTEN GRID
+******************/
+
+section ul {
+    display: var(--display-grid);
+    justify-content: var(--center-align);
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 250px 300px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 0px 30px 0px 0px;
+}
+
+section ul img {
+    width: 100%;
+}
+
+section ul img:hover {
+    width: 105%;
+
+}
+
+section ul button {
+    clip-path: var(--clip-path-button-shape);
+    background-color: var(--fourthcolor);
+    font-family: var(--font-family);
+    font-weight: var(--weight);
+    padding: 0.6em 0.9em 0.5em;
+    font-size: 1em;
+}
+
+section ul button:hover {
+    padding: .8em;
+    transform: rotate(-2deg);
+}
+
+main section ul li img.regenboog {
+    width: 80%;
+}
+
+main section ul li img.regenboog:hover {
+    width: 85%;
+}
+
+
+/******************
+BLAUWE SECTIE
+******************/
+.blauwesectie {
+    background-color: var(--secondarycolor);
+    color: var(--fourthcolor);
+}
+
+.blauwesectie h4 {
+    font-family: var(--secondary-font);
+    text-align: var(--center-align);
+    font-size: 3em;
+}
+
+.blauwesectie h4 span {
+    font-family: var(--secondary-font);
+    font-size: 2em;
+}
+
+/******************
+NAAR BOVEN
+******************/
+
+.boven {
+    text-align: var(--center-align);
+    background-color: var(--primarycolor);
+    clip-path: var(--clip-path-button-shape);
+    color: var(--thirdcolor);
+    font-family: var(--font-family);
+    font-size: 18px;
+    padding: 1em 4em 1em 4em;
+    margin-left: -2.8em;
+    margin-bottom: 4em;
+}
+
+
+/******************
+FOOTER
+******************/
+footer {
+    display: var(--display-flex);
+    justify-content: var(--center-align);
+    align-items: var(--center-align);
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+footer  button img {
+    align-items: var(--center-align);
+    width: 60%;
+}
+
+footer>img {
+    width: 30%;
+}
+
+footer button {
+    background-color: var(--fourthcolor);
+    cursor: var(--click);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+footer div {
+    border-top: 2px dotted var(--fifthcolor);
+    width: 100%;
+    height: 0;
+}
+

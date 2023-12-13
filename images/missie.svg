@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #06c;
+      }
+
+      .cls-2 {
+        fill: #fe0100;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        font-family: AmericanTypewriter-CondensedBold, 'American Typewriter';
+        font-weight: 700;
+      }
+
+      .cls-4, .cls-5 {
+        font-size: 39.43px;
+        isolation: isolate;
+      }
+
+      .cls-5 {
+        font-family: ArialMT, Arial;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="m158.1,225.5c46.2-3.9,72.3-64.7,72.3-105.1s-24.1-79.5-66.6-91.6C121.2,16.6,29.1,59.8,32,116.4c2.8,56.5,29.7,117.2,126.1,109.1"/>
+    <path class="cls-3" d="m166,78.3l52.8,45.1-25.5,38.6-12.3-10.6,15.1-23.4-140.3,5.9-.5-14.2,135.7-5.3-29.9-27.6,4.9-8.5Z"/>
+    <text class="cls-5" transform="translate(77.94 101.81) rotate(2)"><tspan x="0" y="0">mee</tspan></text>
+    <text class="cls-5" transform="translate(68.66 170.22) rotate(-.25)"><tspan x="0" y="0">doen</tspan></text>
+  </g>
+  <g>
+    <path class="cls-1" d="m158.1,225.5c46.2-3.9,72.3-64.7,72.3-105.1s-24.1-79.5-66.6-91.6C121.2,16.6,29.1,59.8,32,116.4c2.8,56.5,29.7,117.2,126.1,109.1"/>
+    <path class="cls-3" d="m166,78.3l52.8,45.1-25.5,38.6-12.3-10.6,15.1-23.4-140.3,5.9-.5-14.2,135.7-5.3-29.9-27.6,4.9-8.5Z"/>
+    <text class="cls-5" transform="translate(77.94 101.81) rotate(2)"><tspan x="0" y="0">mee</tspan></text>
+    <text class="cls-5" transform="translate(68.66 170.22) rotate(-.25)"><tspan x="0" y="0">doen</tspan></text>
+  </g>
+  <g>
+    <path class="cls-1" d="m98.8,7.6C43.3,12.3,12.1,85.2,12.1,133.7s28.9,95.4,79.9,109.9c51,14.6,161.5-37.2,158.1-105.1C246.7,70.7,214.4-2.1,98.8,7.6"/>
+    <path class="cls-3" d="m166,78.3l52.8,45.1-25.5,38.6-12.3-10.6,15.1-23.4-140.3,5.9-.5-14.2,135.7-5.3-29.9-27.6,4.9-8.5Z"/>
+    <text class="cls-5" transform="translate(77.94 101.81) rotate(2)"><tspan x="0" y="0">mee</tspan></text>
+    <text class="cls-5" transform="translate(68.66 170.22) rotate(-.25)"><tspan x="0" y="0">doen</tspan></text>
+  </g>
+  <g>
+    <path class="cls-2" d="m98.8,7.6C43.3,12.3,12.1,85.2,12.1,133.7s28.9,95.4,79.9,109.9c51,14.6,161.5-37.2,158.1-105.1C246.7,70.7,214.4-2.1,98.8,7.6"/>
+    <path class="cls-3" d="m78.4,78.3l-52.7,45.1,25.5,38.6,12.3-10.6-14.3-27.1,186.6,9.4v-12.7l-182.8-6.3,30.3-27.9-4.9-8.5Z"/>
+    <text class="cls-4" transform="translate(120.27 106.29) rotate(5.4)"><tspan x="0" y="0">ONZE</tspan></text>
+    <text class="cls-4" transform="translate(68.66 165.87) rotate(-.25)"><tspan x="0" y="0">MISSIE</tspan></text>
+  </g>
+</svg>
