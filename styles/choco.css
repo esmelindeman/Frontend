@@ -246,7 +246,7 @@ BLAUWE SECTIE
 }
 
 .blauwesectie h4 {
-    font-family: var(--secondary-font);
+    font-family: var(--secondary-font), var(--font-family);
     text-align: var(--center-align);
     font-size: 3em;
 }
