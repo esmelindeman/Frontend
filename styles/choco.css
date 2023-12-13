@@ -199,9 +199,9 @@ section ul {
     display: var(--display-grid);
     justify-content: var(--center-align);
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 250px 300px;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-rows: 190px 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 2px;
     padding: 0px 30px 0px 0px;
 }
 
