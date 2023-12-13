@@ -44,7 +44,7 @@ h3 {
 p {
     text-align: var(--justify-align);
     font-size: var(--font-size);
-    max-width: 450px;
+    max-width: 300px;
 }
 
 /******************
@@ -136,6 +136,7 @@ button {
     font-family: var(--font-family);
     clip-path: var(--clip-path-button-shape);
     cursor: var(--click);
+    color: var(--fifthcolor);
     font-weight: 700;
     border: none;
     font-size: 1.2em;
