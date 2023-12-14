@@ -378,7 +378,8 @@ img.src = src
 </details>
 
 
-
+## Test Resultaten
+<embed src="readme-images/testresultaten.pdf">
 
 
 ## Eindgesprek (week 5)
